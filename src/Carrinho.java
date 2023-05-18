@@ -4,12 +4,12 @@ public class Carrinho {
     private ArrayList<Produto> pedido;
     private String nome;
 
-    private float taxaServico;
+    private float taxaDeServico;
     private float valorTotal;
 
     public Carrinho(){
         pedido = new ArrayList<>();
-        this.taxaServico = 1.10f;
+        this.taxaDeServico = 1.10f;
         this.valorTotal =0f;
     }
     public void add(Produto produto){
@@ -21,7 +21,7 @@ public class Carrinho {
         for (Produto p:pedido){
             valor+=p.getPreco();
         }
-        valor=valor*taxaServico;
+        valor=valor*taxaDeServico;
         return valor;
     }
     public float pagamentoValor(float tax){
