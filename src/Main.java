@@ -239,7 +239,7 @@ public class Main {
         }
     }
     private static void pagamento(float valor,Carrinho pedido){
-        Scanner sc =new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Valor Recebido: ");
         float pag =sc.nextFloat();
 
